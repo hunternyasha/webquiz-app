@@ -1,0 +1,129 @@
+/*!
+=========================================================
+* Quiz Web App
+=========================================================
+
+* Copyright: 2023
+* Code by Hunter Nyasha
+
+-----------------------------------------------------------
+Table of Contents
+===========================================================
+  1. Quiz 
+
+--------------------------------------------------------
+
+=========================================================
+
+*/
+
+/* ------------------------------
+  1. Quiz
+------------------------------ */
+body{
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: center;
+
+  .nav-link {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+  }
+
+.btn:focus{
+  color: transparent;
+}
+  .btn {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    .btn {
+      visibility: visible;
+      opacity: 1;
+    }
+    nav {
+      position: fixed;
+      top: -100vh;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: gray;
+      transition: 1s;
+    }
+    .responsive_nav {
+      transform: translateY(100vh);
+    }
+     .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.quiz {
+  padding: 10% 0;
+  h1{
+    margin: 20px 0;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  .questions {
+    background: rgb(133, 126, 129);
+    background: radial-gradient(
+      circle,
+      rgba(133, 126, 129, 1) 0%,
+      rgba(85, 86, 87, 1) 100%
+    );
+    padding: 5% 0;
+    border-radius: 16px;
+    color: white;
+    -webkit-box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+    box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+    h3 {
+      color: powderblue;
+      padding: 20px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0 10%;
+      li {
+        background-color: gray;
+        border: 3px solid;
+        border-radius: 13px;
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 20px;
+      }
+    }
+  }
+  .results {
+    background: rgb(133, 126, 129);
+    background: radial-gradient(
+      circle,
+      rgba(133, 126, 129, 1) 0%,
+      rgba(85, 86, 87, 1) 100%
+    );
+    padding: 1% 0;
+    margin: 0 20%;
+    border-radius: 16px;
+    color: white;
+    -webkit-box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+    box-shadow: 10px 0px 33px -6px rgba(0, 0, 0, 0.66);
+  }
+}
